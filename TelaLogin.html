@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela login</title>
     <link rel="stylesheet" href="Telalogin.css">
+    <script src="Telalogin.js"></script>
 </head>
 
 <body>
@@ -17,18 +18,23 @@
 
         <div class="container">
             <div class="box">
-                <p>Email</p>
-                <div class="caixaTexto">
-                    <p class="p">digite aqui...</p>
+                
+                <div><label>Email</label></div>
+                <input type="email" name="email" class="caixaTexto"  placeholder="seu@gmail.com" onchange="validateEmail()">
+
+                <div><label>Senha</label></div>
+                <input type="password" name="password" class="caixaTexto" placeholder="Senha" onchange="validateFields()">
+
+                <div>
+                    <button class="botao" type="button"  id="recover-password-button" disabled="true">Recuperar senha</button>
                 </div>
 
-                <p>Senha</p>
-                <div class="caixaTexto">
-                    <p class="p">digite aqui...</p>
+                <div>
+                    <button class="botao" type="button" >Registrar</button>
                 </div>
-                    <button onclick="goToTelaInicial()" id="botao">
-                        Entrar
-                    </button>
+              
+                    <button class="botao" onclick="goToTelaInicial()">Entrar</button>
+
             </div>
         </div>
 

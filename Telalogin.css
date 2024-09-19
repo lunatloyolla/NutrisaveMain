@@ -36,7 +36,7 @@ body{
 }
 
 
-#botao{
+.botao{
     margin-top: 2%;
     margin-left: 32%;
     width: 30%;
@@ -47,6 +47,7 @@ body{
     font-size: larger;
     color: white
 }
+
 
 .p{
     color: rgba(113, 113, 113, 1);
