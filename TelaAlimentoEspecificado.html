@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Alimento Especificado</title>
+    <link rel="stylesheet" href="TelaAlimentoEspecificado.css">
+</head>
+
+<body>
+    <header>
+        <div class="FlexDiv">
+            <div class="FlexDiv">
+                <textarea>
+            Pesquise um alimento...</textarea>
+            </div>
+    
+            <button onclick="Pesquisar()" id="BotaoLupa">
+                <img src="assets/image 1.svg" alt="" width="30">
+            </button>
+    
+            <img src="assets/folha 1.svg" alt="" class="Logo">
+        </div>    
+    </header>
+
+    <section>
+        <div class="CardAlimento">
+            <img src="assets/cupuaçu.svg" alt="" class="cupuacu">
+    
+            <h3>Cupuaçu</h3>
+    
+            <table class="tabela" border="1">
+                <tr>
+                    <td>100g</td>
+                    <td>49 kcal</td>
+                </tr>
+            </table>
+        </div>
+        <div class="InfoAlimento">
+            <! -- devolver lista componente/quantidade da API -->
+                <div class="FlexDivTabelas">
+                    <div class="tabela">
+                        <h3>100g</h3>
+                        <table class="qtdComponente" border="1">
+                            <tr>
+                                <td>quantidade</td>
+                                <td>Componente</td>
+                            </tr>
+                            <tr>
+                                <td>Calcio</td>
+                                <td>8,9 mg</td>
+                            </tr>
+                            <tr>
+                                <td>fosforo</td>
+                                <td>16,3 mg</td>
+                            </tr>
+                            <tr>
+                                <td>ferro</td>
+                                <td>0,4 mg</td>
+                            </tr>
+                            <tr>
+                                <td>vitamina C</td>
+                                <td>24,5 mg</td>
+                            </tr>
+                            <tr>
+                                <td>proteina</td>
+                                <td>1,1 mg</td>
+                            </tr>
+                            <tr>
+                                <td>gorduras</td>
+                                <td>1,25 mg</td>
+                            </tr>
+                            <tr>
+                                <td>fibras</td>
+                                <td>2,42 mg</td>
+                            </tr>
+                            <tr>
+                                <td>carboidratos</td>
+                                <td>10,5 mg</td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <! -- devolver lista de receitas da API -->
+                        <div class="Receita">
+                            <h3>Sugestão de receita</h3>
+                            <h4>Mousse de cupuaçu</h4>
+                            <div class="FlexDiv">
+                                <div class="Ingredientes">
+                                    <p>Ingredientes</p>
+                                    <ul>
+                                        <li>1 lata de leite condensado (395 g)</li>
+                                        <li>1 lata de creme de leite (300 g)</li>
+                                        <li>2 envelopes de polpa de cupuaçu congelado, equivalendo a (200 g) de polpa da fruta</li>
+                                        <li>1 envelope de gelatina em pó sem sabor e incolor (12 g)</li>
+        
+                                    </ul>
+                                </div>
+                                 <div class="Modo de preparo">
+                                        <p>Modo de preparo</p>
+                                    <ol>
+                                        <li>Despejar o creme de leite, o leite condensado e a polpa no liquidificador.</li>
+                                        <li>Dissolver a gelatina em 6 colheres de sopa de água gelada ou conforme instruções do fabricante</li>
+                                        <li>Reservar a gelatina</li>
+                                        <li>Ligar o liquidificador</li>
+                                        <li>Adicionar a gelatina aos poucos e bater até que a mistura fique homogênea.</li>
+                                        <li>Despejar o conteúdo em uma tigela ou tacinhas e levar à geladeira até que assuma consistência.</li>
+                                        <li>Servir gelado</li>
+                                      </ol>
+                                 </div>
+                            </div>
+                            
+    
+                        </div>
+                </div>
+        </div>
+    
+    
+    </section>
+   
+
+    <footer>
+        <button onclick="goToTelaInicial()" class="botao">
+            Voltar
+        </button>
+
+        <button onclick="goToTelaAvaliacao()" class="botao">
+            Avaliar Receita
+        </button>
+    </footer>
+
+</body>
+
+</html>

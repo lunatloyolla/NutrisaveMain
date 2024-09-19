@@ -1,0 +1,103 @@
+/*Estrutura*/
+
+body{
+    background-color: rgba(6, 95, 17, 1);
+    width: 90vw;
+    height: 90vh;
+}
+section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Header*/
+.FlexDiv{
+    display: flex;
+    margin-bottom: 2%;
+}
+
+textarea{
+    background-color: rgba(182, 182, 182, 0.34);
+    border: none;
+    width: 90vw;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 1);
+    
+}
+
+#BotaoLupa{
+    border: none;
+    background-color: rgba(6, 95, 17, 1);
+}
+
+
+
+
+/*Section*/
+
+.CardAlimento{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(217, 217, 217, 1);
+    width: 15vw;
+    height: 20vw;
+    align-items: center;
+}
+
+.cupuacu{
+    width: 99%;
+}
+
+.FlexDivTabelas{
+    display: flex;
+    gap: 10px;
+}
+
+.InfoAlimento{
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+   
+}
+
+.tabela{
+    margin-left: 5%;
+    background-color: rgba(217, 217, 217, 1);
+    height: fit-content;
+    width: fit-content;
+    
+}
+
+
+.botao{
+    width: 15%;
+    height: 25%;
+    border-radius: 20px;
+    background-color: #001E04;
+    text-align: center;
+    font-size: larger;
+    color: white
+}
+
+h3{
+    text-align: center;
+    font-size: medium;
+    background-color:rgba(128, 147, 103, 1) ;
+}
+
+h4{
+    text-align: center;
+    font-size: medium;
+}
+
+.Receita{
+    width: 40vw;
+    background-color: rgba(217, 217, 217, 1);
+    font-display: flex;
+}

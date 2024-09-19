@@ -1,0 +1,97 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+.inlineDiv{
+    display: flex;
+}
+.FlexDiv{
+    display: flex;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+div{
+    align-items: center;
+}
+
+.img19{
+    padding-left: 0.5%;
+    padding-top: 0.5%;
+}
+textarea{
+    background-color: rgba(182, 182, 182, 0.34);
+    border: none;
+    border-radius: 30px;
+    width: 70%;
+    color: rgba(113, 113, 113, 1) ;
+}
+
+#BotaoLupa{
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+
+.content{
+    border-radius: 30px;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(217, 217, 217, 0.26);
+    margin-left: 3%;
+    margin-right: 3%;
+    
+}
+
+.infoDiv{
+    border-radius: 30px;
+    width: 30%;
+    height: 25%;
+    background-color: rgba(171, 198, 138, 1);
+    display: inline-block;
+    margin: 7%;
+    align-content: center;
+}
+
+
+h4{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 35%;
+}
+
+.alimentos{
+    border: solid;
+    width: 16%;
+    height: 25%;
+    display: inline-block;
+    margin: 7%;
+    align-items: center;
+    background-color: white;
+}
+
+.alimentoButton{
+    padding-left: 15%;
+    padding-bottom: 10%;
+    background-color: white;
+}
+
+#botao{
+    border-radius: 20px;
+    background-color: rgba(95, 124, 58, 1);
+    color: white;
+}
+
+.BoxDiv{
+    border: solid; 
+}
+
+#alimentosMaisPesquisados{
+    padding-left: 15cm;
+}

@@ -1,0 +1,104 @@
+/*Estrutura*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(6, 95, 17, 1);
+    width: 90vw;
+    height: 90vh;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
+ /*Header*/
+.FlexDiv{
+    display: flex;
+    margin-bottom: 2%;
+}
+
+textarea{
+    background-color: rgba(182, 182, 182, 0.34);
+    border: none;
+    width: 90vw;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 1);
+    
+}
+
+#BotaoLupa{
+    border: none;
+    background-color: rgba(6, 95, 17, 1);
+}
+
+/*Section*/
+.AvaliacaoReceita, .Comentarios{
+    background-color: rgba(37, 169, 53, 0.5);
+    width: 50%;
+    height: 80%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+
+h2{
+    background-color: rgba(128, 147, 103, 1);
+    color: white;
+    font-size: medium;
+}
+
+.p{
+    background-color: rgba(217, 217, 217, 0.36);
+    color:white;
+}
+
+.ImgReceita{
+    width: 70%;
+    max-width: 80%;
+}
+
+/*Div Estrelas*/
+/*--------------*/
+.estrelas input[type=radio] {
+    display: none;
+  }
+  .estrelas label i.fa{
+    font-size: 2.5em
+  }
+  .estrelas label i.fa:before {
+    content:'\f005';
+    color: #FC0;
+  }
+  .estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+  }
+/*--------------*/
+
+#Texto{
+    width: 50%;
+}
+
+#BotaoPublicar{
+    border-radius: 25px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.user{
+    display: flex;
+}
+
+.FotoPerfil{
+    width: 10%;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+
+/*footer*/
