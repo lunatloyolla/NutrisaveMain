@@ -26,3 +26,16 @@ function isPasswordValid() {
 function validateEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
 }
+
+function goToTelaInicial() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (email && password) {
+        window.location.href = "Telainicial.html"
+
+    }else {
+        alert("Por favor, preencha todos os campos.");
+    
+    }
+}
