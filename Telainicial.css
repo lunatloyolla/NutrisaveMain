@@ -3,11 +3,12 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(245, 245, 245);
+    background-color: rgba(6, 95, 17, 1);
 }
 
 .inlineDiv{
     display: flex;
+    justify-content: space-between;
 }
 .FlexDiv{
     display: flex;
@@ -15,25 +16,27 @@ body{
     margin-right: 3%;
 }
 
+
 div{
     align-items: center;
+    text-align: center;
 }
 
 .img19{
     padding-left: 0.5%;
     padding-top: 0.5%;
 }
-textarea{
-    background-color: rgba(182, 182, 182, 0.34);
+.BarraPesquisa{
+    background-color:rgb(221, 221, 221);
     border: none;
-    border-radius: 30px;
-    width: 70%;
-    color: rgba(113, 113, 113, 1) ;
+    width: 90vw;
+    height: 5vh;
+    border-radius: 30px;    
 }
 
 #BotaoLupa{
     border: none;
-    background-color: rgb(245, 245, 245);
+    background-color:rgba(6, 95, 17, 1);
 }
 
 .content{
@@ -67,7 +70,6 @@ a{
 }
 
 .alimentos{
-    border: solid;
     width: 16%;
     height: 25%;
     display: inline-block;
@@ -76,22 +78,24 @@ a{
     background-color: white;
 }
 
-.alimentoButton{
-    padding-left: 15%;
-    padding-bottom: 10%;
-    background-color: white;
-}
 
 #botao{
     border-radius: 20px;
     background-color: rgba(95, 124, 58, 1);
     color: white;
 }
+.BotaoAlimento{
+    border-radius: 20px;
+}
 
 .BoxDiv{
     border: solid; 
 }
 
-#alimentosMaisPesquisados{
-    padding-left: 15cm;
+.PrincipaisInformacoes{
+    margin-left: 10%;
+}
+
+.AlimentosMaisPesquisados{
+    margin-left: 20%;
 }

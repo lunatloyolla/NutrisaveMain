@@ -5,48 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas Salvas</title>
-    <link rel="stylesheet" href="salvas.css">
+    <link rel="stylesheet" href="TelaSalvos.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Receitas salvas</h1>
-    </header>
-    <div class="container">
-        <div class="search-bar">
-            <input type="text" placeholder="Pesquise uma receita...">
+        <div class="NomePagina">
+            <img src="assets/image 32.svg" alt="" width="60px">
+            <h1>Receitas Salvas</h1>
+        </div>
+
+        <div class="inlineDiv">
+            <input placeholder="Pesquise uma receita..." class="BarraPesquisa"></input>
+
             <button onclick="Pesquisar()" id="BotaoLupa">
                 <img src="assets/image 1.svg" alt="" width="30">
             </button>
+
+            <img src="assets/folha 1.svg" alt="" id="Logo">
+
         </div>
 
+    </header>
+
+    <section>
         <div class="receitas">
-            <div class="mousse">
-                <img src="assets/mousse.svg" alt="Mousse de cupuaçu">
+            <div class="card">
+                <img src="assets/mousse.svg" alt="Mousse de cupuaçu" class="Img" id="ImgMousse">
                 <p>Mousse de Cupuaçu</p>
-                <button><img src="assets/receita.svg" alt="Receita Mousse"></button>
+                <button class="BotaoReceita">
+                    <img src="assets/receita.svg" alt="Receita Mousse" class="ImgBotaoReceita" >
+                </button>
             </div>
-            <div class="crepioca">
-                <img src="assets/crepioca.svg" alt="Crepioca">
+
+            <div class="card">
+                <img src="assets/crepioca.svg" alt="Crepioca" class="Img">
                 <p>Crepioca</p>
-                <button><img src="assets/receita.svg" alt="Receita Crepioca"></button>
+                <button class="BotaoReceita">
+                    <img src="assets/receita.svg" alt="Receita Crepioca" class="ImgBotaoReceita" >
+                </button>
             </div>
-            <div class="bolo-cenoura">
-                <img src="assets/bolo.svg" alt="Bolo de Cenoura">
+
+            <div class="card">
+                <img src="assets/bolo.svg" alt="Bolo de Cenoura" class="Img">
                 <p>Bolo de Cenoura</p>
-                <button><img src="assets/receita.svg" alt="Receita Bolo de Cenoura"></button>
+                <button class="BotaoReceita">
+                    <img src="assets/receita.svg" alt="Receita Bolo de Cenoura" class="ImgBotaoReceita">
+                </button>
             </div>
-            <div class="suco-detox">
-                <img src="assets/suco.svg" alt="Suco Detox">
+
+            <div class="card">
+                <img src="assets/suco.svg" alt="Suco Detox" class="Img">
                 <p>Suco Detox</p>
-                <button><img src="assets/receita.svg" alt="Receita Detox"></button>
+                <button class="BotaoReceita">
+                    <img src="assets/receita.svg" alt="Receita Detox" class="ImgBotaoReceita">
+                </button>
             </div>
         </div>
+    </section>
 
-        <footer>
-            <button class="back-button">Voltar</button>
-        </footer>
+
+    <footer>
+        <button class="back-button">
+            Voltar
+        </button>
+    </footer>
     </div>
 </body>
 

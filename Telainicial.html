@@ -11,10 +11,10 @@
 <body>
 
     <div class="inlineDiv">
-        <textarea>Pesquise um alimento....</textarea>
+        <input placeholder="Pesquise uma receita..." class="BarraPesquisa" ></input>
 
         <button onclick="Pesquisar()" id="BotaoLupa">
-            <img src="assets/image 1.svg" alt="" width="30">
+            <img src="assets/image 1.svg" alt="" width="30" >
         </button>
 
         <img src="assets/folha 1.svg" alt="" id="Logo">
@@ -22,14 +22,15 @@
     </div>
 
     <div class="FlexDiv">
-        <div>
+        <div class="PrincipaisInformacoes">
             <h1>Principais Informacoes</h1>
         </div>
+        
         <div class="img19">
             <img src="assets/image 19.svg" alt="" width="30" id="img19">
         </div>
 
-        <div id="alimentosMaisPesquisados">
+        <div  class="AlimentosMaisPesquisados">
             <h1>Alimentos mais pesquisados</h1>
         </div>
 
@@ -57,59 +58,61 @@
 
         
         <div class="content">
-            <figure class="alimentos">
+            <div class="alimentos">
                 <img class="img" src="assets/cheetos.svg" alt="Cheetos" width="90">
                 <div class="alimentoButton">
-                    <button>
+                    <button class="BotaoAlimento">
                         <figcaption>Cheetos</figcaption>
                     </button>
                 </div>
-            </figure>
-            <figure class="alimentos">
+            </div>
+            <div class="alimentos">
                 <img class="img" src="assets/aveia.svg" alt="Aveia" width="90">
                 <div class="alimentoButton">
-                    <button>
+                    <button class="BotaoAlimento">
                         <figcaption>Aveia</figcaption>
                     </button>
                 </div>
-            </figure>
-            <figure class="alimentos">
+            </div>
+            <div class="alimentos">
                 <img class="img" src="assets/banana.svg" alt="Banana" width="90">
                 <div class="alimentoButton">
-                    <button>
+                    <button class="BotaoAlimento">
                         <figcaption>Banana</figcaption>
                     </button>
                 </div>
-            </figure>
-            <figure class="alimentos">
+            </div>
+            <div class="alimentos">
                 <img class="img" src="assets/cupuaçu.svg" alt="Cupuaçu" width="90">
                 <div class="alimentoButton">
-                    <button>
+                    <button ondblclick="goToTelaAlimentoEspecificado" class="BotaoAlimento">
                         <figcaption>Cupuaçu</figcaption>
                     </button>
                 </div>
-            </figure>
-            <figure class="alimentos">
+            </div>
+            <div class="alimentos">
                 <img class="img" src="assets/doce.svg" alt="Doce de Leite" width="90">
                 <div class="alimentoButton">
-                    <button>
+                    <button class="BotaoAlimento">
                         <figcaption>Doce</figcaption>
                     </button>
                 </div>
-            </figure>
+            </div>
 
-            <figure class="alimentos">
+            <div class="alimentos">
                 <img class="img" src="assets/miojo.svg" alt="Miojo" width="90">
                 <div class="alimentoButton">
-                    <button>
+                    <button class="BotaoAlimento">
                         <figcaption>Miojo</figcaption>
                     </button>
                 </div>
-            </figure>
+            </div>
         </div>
 
         <div class="inlineDiv">
-            <img src="assets/image 20.svg" alt="" width="30">
+            <div>
+                <img src="assets/image 20.svg" alt="" width="30">
+            </div>
 
             <div> 
                 <button onclick="goToTelaReceitasSalvas()" id="botao">

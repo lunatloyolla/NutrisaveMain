@@ -10,7 +10,7 @@ body{
 section{
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 footer{
@@ -24,13 +24,12 @@ footer{
     margin-bottom: 2%;
 }
 
-textarea{
-    background-color: rgba(182, 182, 182, 0.34);
+.BarraPesquisa{
+    background-color:rgb(221, 221, 221);
     border: none;
     width: 90vw;
-    border-radius: 30px;
-    color: rgba(255, 255, 255, 1);
-    
+    height: 5vh;
+    border-radius: 30px;    
 }
 
 #BotaoLupa{
@@ -40,6 +39,8 @@ textarea{
 
 /*Section*/
 .AvaliacaoReceita{
+    display: flex;
+    flex-direction: column;
     background-color: rgba(37, 169, 53, 0.5);
     width: 50%;
     height: 80%;
@@ -71,7 +72,7 @@ h2{
     background-color: rgba(217, 217, 217, 0.36);
     color:white;
     border-radius: 25px;
-    width: 90%;
+    width: 100%;
 }
 
 .ImgReceita{
@@ -98,6 +99,10 @@ h2{
 
 #Texto{
     width: 50%;
+    text-align: left;
+    border-radius: 25px;
+    height: 8vh;
+    background-color:rgb(221, 221, 221);
 }
 
 #BotaoPublicar{
