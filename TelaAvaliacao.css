@@ -9,7 +9,13 @@ body{
 }
 section{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
 }
 
  /*Header*/
@@ -33,12 +39,22 @@ textarea{
 }
 
 /*Section*/
-.AvaliacaoReceita, .Comentarios{
+.AvaliacaoReceita{
     background-color: rgba(37, 169, 53, 0.5);
     width: 50%;
     height: 80%;
     text-align: center;
     border-radius: 25px;
+    justify-content: center;
+}
+
+.Comentarios{
+    background-color: rgba(37, 169, 53, 0.5);
+    width: 40%;
+    height: 80%;
+    text-align: center;
+    border-radius: 25px;
+    align-items: center;
 }
 
 
@@ -46,11 +62,16 @@ h2{
     background-color: rgba(128, 147, 103, 1);
     color: white;
     font-size: medium;
+    width: 99%;
+    align-self: center;
+    border-radius: 25px;
 }
 
 .p{
     background-color: rgba(217, 217, 217, 0.36);
     color:white;
+    border-radius: 25px;
+    width: 90%;
 }
 
 .ImgReceita{
@@ -88,6 +109,7 @@ h2{
 
 .user{
     display: flex;
+    
 }
 
 .FotoPerfil{
@@ -96,9 +118,23 @@ h2{
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 50%;
+    margin: 3%;
 }
 
-
-
+.Conteudo{
+    background-color: rgba(217, 217, 217, 0.5);
+    border-radius: 25vw;
+    margin: 3%;
+    width: 60%;   
+}
 
 /*footer*/
+.botao{
+    width: 15%;
+    height: 25%;
+    border-radius: 20px;
+    background-color: #001E04;
+    text-align: center;
+    font-size: larger;
+    color: white
+}
