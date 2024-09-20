@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela login</title>
-    <link rel="stylesheet" href="Telalogin.css">
+    <link rel="stylesheet" href="Telalogin.css" />
     <script src="Telalogin.js"></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="TituloLogo">
-        <img src="assets/folha 1.svg" alt="" id="logo">
-        <h2 class="h2">NUTRISAVE</h2>
+      <img src="assets/folha 1.svg" alt="" id="logo" />
+      <h2 class="h2">NUTRISAVE</h2>
     </div>
 
-        <div class="container">
-            <div class="box">
-                
-                <div><label>Email</label></div>
-                <input type="email" name="email" class="caixaTexto"  placeholder="seu@gmail.com" onchange="validateEmail()">
+    <div class="container">
+      <div class="box">
+        <div><label>Email</label></div>
+        <input
+          type="email"
+          id="email"
+          class="caixaTexto"
+          placeholder="seu@gmail.com"
+          onchange="validateEmail()"
+        />
 
-                <div><label>Senha</label></div>
-                <input type="password" name="password" class="caixaTexto" placeholder="Senha" onchange="validateFields()">
+        <div><label>Senha</label></div>
+        <input
+          type="password"
+          id="password"
+          class="caixaTexto"
+          placeholder="Senha"
+          onchange="validateFields()"
+        />
 
-                <div>
-                    <button class="botao" type="button"  id="recover-password-button" disabled="true">Recuperar senha</button>
-                </div>
-
-                <div>
-                    <button class="botao" type="button" >Registrar</button>
-                </div>
-              
-                    <button class="botao" onclick="goToTelaInicial()">Entrar</button>
-
-            </div>
+        <div>
+          <button
+            class="botao"
+            type="button"
+            id="recover-password-button"
+            disabled="true"
+          >
+            Recuperar senha
+          </button>
         </div>
 
+        <div>
+          <button class="botao" type="button">Registrar</button>
+        </div>
 
-
-
-</body>
-
+        <button class="botao" type="submit" onclick="goToTelaInicial()">
+          Entrar
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
