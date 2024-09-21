@@ -12,29 +12,27 @@
 <body>
 
     <div class="inlineDiv">
-        <input placeholder="Pesquise uma receita..." class="BarraPesquisa" ></input>
+        <input placeholder="Pesquise uma receita..." class="BarraPesquisa"></input>
 
         <button onclick="Pesquisar()" id="BotaoLupa">
-            <img src="assets/image 1.svg" alt="" width="30" >
+            <img src="assets/image 1.svg" alt="" width="30">
         </button>
 
         <img src="assets/folha 1.svg" alt="" id="Logo">
-    
     </div>
 
     <div class="FlexDiv">
         <div class="PrincipaisInformacoes">
-            <h1>Principais Informacoes</h1>
+            <h1>Principais Informações</h1>
         </div>
-        
+
         <div class="img19">
             <img src="assets/image 19.svg" alt="" width="30" id="img19">
         </div>
 
-        <div  class="AlimentosMaisPesquisados">
+        <div class="AlimentosMaisPesquisados">
             <h1>Alimentos mais pesquisados</h1>
         </div>
-
     </div>
 
     <div class="FlexDiv">
@@ -43,23 +41,11 @@
                 <h4>Confira: os piores alimentos do mundo</h4>
                 <a href="https://medsulsaude.com.br/quais-sao-os-piores-alimentos-para-a-saude/">ler mais</a>
             </div>
-            <div class="infoDiv">
-                <h4>Confira: os piores alimentos do mundo</h4>
-                <a href="https://medsulsaude.com.br/quais-sao-os-piores-alimentos-para-a-saude/">ler mais</a>
-            </div>
-            <div class="infoDiv">
-                <h4>Confira: os piores alimentos do mundo</h4>
-                <a href="https://medsulsaude.com.br/quais-sao-os-piores-alimentos-para-a-saude/">ler mais</a>
-            </div>
-            <div class="infoDiv">
-                <h4>Confira: os piores alimentos do mundo</h4>
-                <a href="https://medsulsaude.com.br/quais-sao-os-piores-alimentos-para-a-saude/">ler mais</a>
-            </div>
+            
         </div>
 
-        
         <div class="content">
-            <div class="alimentos">
+            <div class="alimentos" onclick="goToTelaAlimentoEspecificado('Cheetos')">
                 <img class="img" src="assets/cheetos.svg" alt="Cheetos" width="90">
                 <div class="alimentoButton">
                     <button class="BotaoAlimento">
@@ -67,7 +53,7 @@
                     </button>
                 </div>
             </div>
-            <div class="alimentos">
+            <div class="alimentos" onclick="goToTelaAlimentoEspecificado('Aveia')">
                 <img class="img" src="assets/aveia.svg" alt="Aveia" width="90">
                 <div class="alimentoButton">
                     <button class="BotaoAlimento">
@@ -75,7 +61,7 @@
                     </button>
                 </div>
             </div>
-            <div class="alimentos">
+            <div class="alimentos" onclick="goToTelaAlimentoEspecificado('Banana')">
                 <img class="img" src="assets/banana.svg" alt="Banana" width="90">
                 <div class="alimentoButton">
                     <button class="BotaoAlimento">
@@ -83,15 +69,15 @@
                     </button>
                 </div>
             </div>
-            <div class="alimentos">
+            <div class="alimentos" onclick="goToTelaAlimentoEspecificado('Cupuaçu')">
                 <img class="img" src="assets/cupuaçu.svg" alt="Cupuaçu" width="90">
                 <div class="alimentoButton">
-                    <button ondblclick="goToTelaAlimentoEspecificado" class="BotaoAlimento">
+                    <button class="BotaoAlimento">
                         <figcaption>Cupuaçu</figcaption>
                     </button>
                 </div>
             </div>
-            <div class="alimentos">
+            <div class="alimentos" onclick="goToTelaAlimentoEspecificado('Doce')">
                 <img class="img" src="assets/doce.svg" alt="Doce de Leite" width="90">
                 <div class="alimentoButton">
                     <button class="BotaoAlimento">
@@ -99,8 +85,7 @@
                     </button>
                 </div>
             </div>
-
-            <div class="alimentos">
+            <div class="alimentos" onclick="goToTelaAlimentoEspecificado('Miojo')">
                 <img class="img" src="assets/miojo.svg" alt="Miojo" width="90">
                 <div class="alimentoButton">
                     <button class="BotaoAlimento">
@@ -115,14 +100,14 @@
                 <img src="assets/image 20.svg" alt="" width="30">
             </div>
 
-            <div> 
-                 <button onclick="goToTelaSalvos()" id="botao">
+            <div>
+                <button onclick="goToTelaSalvos()" id="botao">
                     Receitas Salvas
                 </button>
             </div>
-            
         </div>
     </div>
+
 </body>
 
 </html>

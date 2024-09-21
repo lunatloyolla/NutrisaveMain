@@ -7,3 +7,10 @@ function goToTelaSalvos() {
     }
 
 };
+
+
+function goToTelaAlimentoEspecificado(alimento) {
+            
+    localStorage.setItem('alimentoSelecionado', alimento);
+    window.location.href = 'TelaAlimentoEspecificado.html'; 
+}
