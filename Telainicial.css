@@ -1,55 +1,56 @@
-
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgba(6, 95, 17, 1);
 }
 
-.inlineDiv{
+.inlineDiv {
     display: flex;
     justify-content: space-between;
 }
-.FlexDiv{
+
+.FlexDiv {
     display: flex;
     margin-left: 3%;
     margin-right: 3%;
 }
 
-
-div{
+div {
     align-items: center;
     text-align: center;
 }
 
-.img19{
+.img19 {
     padding-left: 0.5%;
     padding-top: 0.5%;
 }
-.BarraPesquisa{
-    background-color:rgb(221, 221, 221);
+
+.BarraPesquisa {
+    background-color: rgb(221, 221, 221);
     border: none;
     width: 90vw;
     height: 5vh;
-    border-radius: 30px;    
+    border-radius: 30px;
 }
 
-#BotaoLupa{
+#BotaoLupa {
     border: none;
-    background-color:rgba(6, 95, 17, 1);
+    background-color: rgba(6, 95, 17, 1);
 }
 
-.content{
+.content {
     border-radius: 30px;
     width: 200%;
     height: 200%;
     background-color: rgba(217, 217, 217, 0.26);
     margin-left: 3%;
     margin-right: 3%;
-    
+
 }
 
-.infoDiv{
+.infoDiv {
     border-radius: 30px;
     width: 30%;
     height: 25%;
@@ -60,16 +61,16 @@ div{
 }
 
 
-h4{
+h4 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
-a{
+
+a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-left: 35%;
 }
 
-.alimentos{
+.alimentos {
     width: 16%;
     height: 25%;
     display: inline-block;
@@ -79,23 +80,24 @@ a{
 }
 
 
-#botao{
+#botao {
     border-radius: 20px;
     background-color: rgba(95, 124, 58, 1);
     color: white;
 }
-.BotaoAlimento{
+
+.BotaoAlimento {
     border-radius: 20px;
 }
 
-.BoxDiv{
-    border: solid; 
+.BoxDiv {
+    border: solid;
 }
 
-.PrincipaisInformacoes{
+.PrincipaisInformacoes {
     margin-left: 10%;
 }
 
-.AlimentosMaisPesquisados{
+.AlimentosMaisPesquisados {
     margin-left: 20%;
 }

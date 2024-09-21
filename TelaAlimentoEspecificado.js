@@ -85,5 +85,21 @@ function atualizarInformacoes(card) {
 // Chame a função para gerar os cards quando a página carregar
 window.onload = gerarCards;
 
+function goToTelaInicial() {
+    const botaoVoltar = document.getElementById('botaoVoltar');
+    if(botaoVoltar){
+        window.location.href = 'Telainicial.html';
+    }
+
+};
+
+function goToTelaAvaliacao() {
+    const botaoAvaliar = document.getElementById('botaoAvaliar');
+    if(botaoAvaliar){
+        window.location.href = 'TelaAvaliacao.html';
+    }
+
+};
+
 
 
