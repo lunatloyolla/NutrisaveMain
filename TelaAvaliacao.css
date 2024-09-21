@@ -50,6 +50,8 @@ footer{
 }
 
 .Comentarios{
+    display: flex;
+    flex-direction: column;
     background-color: rgba(37, 169, 53, 0.5);
     width: 40%;
     height: 80%;
@@ -103,13 +105,15 @@ h2{
     border-radius: 25px;
     height: 8vh;
     background-color:rgb(221, 221, 221);
+    resize: none;
 }
 
 #BotaoPublicar{
     border-radius: 25px;
     background: none;
-    border: none;
     color: white;
+    max-width: 20%;
+    margin-left: 40%;
 }
 
 .user{
@@ -133,6 +137,15 @@ h2{
     width: 60%;   
 }
 
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
 /*footer*/
 .botao{
     width: 15%;
@@ -141,5 +154,23 @@ h2{
     background-color: #001E04;
     text-align: center;
     font-size: larger;
-    color: white
+    color: white;
+}
+
+#commentsSection{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(217, 217, 217, 0.5);
+    width: 60%;  
+    border-radius: 25vw;
+    margin: 3%;
+}
+
+.FotoPerfilUser{
+    width: 13%;
+    max-width: 400px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 3%;
 }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Avaliação</title>
+    <script src="TelaAvaliacao.js" defer></script> 
     <link rel="stylesheet" href="TelaAvaliacao.css">
 </head>
 
@@ -12,10 +13,10 @@
     <header>
         <div class="FlexDiv">
             <div class="FlexDiv">
-                <input placeholder="Pesquise uma receita..." class="BarraPesquisa" ></input>
+                <input placeholder="Pesquise uma receita..." class="BarraPesquisa">
             </div>
 
-            <button onclick="Pesquisar()" id="BotaoLupa">
+            <button id="BotaoLupa">
                 <img src="assets/image 1.svg" alt="" width="30">
             </button>
 
@@ -31,7 +32,6 @@
             <div>
                 <img src="assets/image 21.svg" alt="" class="ImgReceita">
             </div>
-            
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
             <div class="estrelas">
                 <input type="radio" id="cm_star-empty" name="fb" value="" checked />
@@ -47,11 +47,11 @@
                 <input type="radio" id="cm_star-5" name="fb" value="5" />
             </div>
             <div>
-                <input name="Texto" id="Texto" placeholder="Digite um Comentario...">
-            </input>
+                <textarea name="Texto" id="Texto" placeholder="Digite um Comentario..."
+                    class="input-field"></textarea>
             </div>
-           
-            <button onclick="Publicar()" id="BotaoPublicar"> Publicar </button>
+
+            <button id="BotaoPublicar"> Publicar </button> 
         </div>
         <div class="Comentarios">
             <div class="user">
@@ -90,14 +90,18 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <footer>
-        <button onclick="goToTelaAlimentoEspecificado()" class="botao">
-            Voltar
-        </button>
-    </footer>
+            <h3> Você comentou: </h3>
+            <div id="commentsSection">
+
+            </div>
+
+            <button onclick="goToTelaAlimentoEspecificado()" class="botao" id="botao">
+                Voltar
+            </button>
+        </div>
+
+    </section>
 </body>
 
 </html>
