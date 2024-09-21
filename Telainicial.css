@@ -41,6 +41,7 @@ div {
 }
 
 .content {
+
     border-radius: 30px;
     width: 200%;
     height: 200%;
@@ -53,7 +54,7 @@ div {
 .infoDiv {
     border-radius: 30px;
     width: 30%;
-    height: 25%;
+    max-height: 30%;
     background-color: rgba(171, 198, 138, 1);
     display: inline-block;
     margin: 7%;
