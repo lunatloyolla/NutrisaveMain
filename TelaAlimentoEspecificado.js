@@ -44,6 +44,18 @@ window.onload = function() {
                 <td>${alimentoSelecionado.carboidratos || '-'}</td>
             </tr>
         `;
+        if (alimentoSelecionado.ImgReceita) {
+            const ImgReceita = document.querySelector('.Receita .ImagemReceita');
+            ImgReceita.src = alimentoSelecionado.ImgReceita;
+            ImgReceita.style.display = 'block';  
+        }
+    
+        if (alimentoSelecionado.linkReceita) {
+            const linkReceita = document.querySelector('.Receita .LinkReceita');
+            linkReceita.href = alimentoSelecionado.linkReceita;
+            linkReceita.textContent = 'Ver Receita';
+            linkReceita.style.display = 'block';  
+        }
     }
 };
 
