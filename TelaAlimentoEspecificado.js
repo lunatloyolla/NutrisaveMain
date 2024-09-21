@@ -61,3 +61,55 @@ function goToTelaAvaliacao() {
         window.location.href = 'TelaAvaliacao.html';
     }
 };
+window.onload = function() {
+    const alimentoSelecionado = JSON.parse(localStorage.getItem('alimentoSelecionado'));
+    
+    if (alimentoSelecionado) {
+        const cardAlimento = document.querySelector('.CardAlimento');
+        cardAlimento.querySelector('img').src = alimentoSelecionado.imagem;
+        cardAlimento.querySelector('h3').textContent = alimentoSelecionado.nome;
+
+      
+        const tabelaComponente = document.querySelector('.InfoAlimento .qtdComponente');
+        tabelaComponente.innerHTML = `
+            <tr>
+                <td>quantidade</td>
+                <td>Componente</td>
+            </tr>
+            <tr>
+                <td>Calcio</td>
+                <td>${alimentoSelecionado.calcio || '-'}</td>
+            </tr>
+            <tr>
+                <td>Fosforo</td>
+                <td>${alimentoSelecionado.fosforo || '-'}</td>
+            </tr>
+            <tr>
+                <td>Ferro</td>
+                <td>${alimentoSelecionado.ferro || '-'}</td>
+            </tr>
+            <tr>
+                <td>Vitamina C</td>
+                <td>${alimentoSelecionado.vitaminaC || '-'}</td>
+            </tr>
+            <tr>
+                <td>Proteina</td>
+                <td>${alimentoSelecionado.proteina || '-'}</td>
+            </tr>
+            <tr>
+                <td>Gorduras</td>
+                <td>${alimentoSelecionado.gorduras || '-'}</td>
+            </tr>
+            <tr>
+                <td>Fibras</td>
+                <td>${alimentoSelecionado.fibras || '-'}</td>
+            </tr>
+            <tr>
+                <td>Carboidratos</td>
+                <td>${alimentoSelecionado.carboidratos || '-'}</td>
+            </tr>
+        `;
+    } else {
+        alert('Nenhum alimento selecionado!'); 
+    }
+};

@@ -93,5 +93,18 @@ function goToTelaAlimentoEspecificado(nomeAlimento) {
 }
 
 
+function Pesquisar() {
+    const pesquisaInput = document.querySelector('.BarraPesquisa').value;
+    const alimentoSelecionado = especificacoes.find(alimento => alimento.nome.toLowerCase() === pesquisaInput.toLowerCase());
+
+    if (alimentoSelecionado) {
+        localStorage.setItem('alimentoSelecionado', JSON.stringify(alimentoSelecionado));
+        window.location.href = 'TelaAlimentoEspecificado.html';
+    } else {
+        alert('Alimento não encontrado!'); 
+    }
+}
+
+
 
 

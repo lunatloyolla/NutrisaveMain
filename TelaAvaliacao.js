@@ -15,7 +15,7 @@ BotaoPublicar.addEventListener('click', function() {
             <div class="user">
                 <img src="assets/people.png" class="FotoPerfilUser" alt="Foto de Perfil">
                 <div class="ConteudoUser">
-                    layanerx
+                    layane
                     <img src="assets/Group 46.svg" alt="" width="150">
                     <p style="margin: 0;">${comentario}</p>
                 </div>
