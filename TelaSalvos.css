@@ -71,7 +71,7 @@ section {
     max-height: 150px;
 }
 
-.BotaoReceita{
+#BotaoReceita{
     max-width: 20%;
     margin-left: 40%;
     background-color: rgba(217, 217, 217, 1);;
@@ -89,4 +89,29 @@ section {
     font-size: 16px;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.LinkReceitaDiv:hover {
+    background-color: #218838; 
+    text-decoration: none;
+}
+
+.LinkReceitaDiv{
+    margin-left: 20%;
+    margin-bottom: 10%;
+    text-align: center;
+    text-decoration: none;
+    width: 60%;
+    display: inline-block;
+    padding: 10px 15px; 
+    background-color: #28a745; 
+    color: white;
+    text-decoration: none; 
+    border-radius: 25px;
+    transition: background-color 0.3s; 
+}
+
+.teste{
+    text-decoration: none;
+    color: inherit;
 }

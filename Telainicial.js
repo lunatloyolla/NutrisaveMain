@@ -1,12 +1,11 @@
 const especificacoes = [
-    { nome: "Cupuaçu", imagem: "assets/cupuaçu.svg", calcio: "8,9 mg", fosforo: "16,3 mg", ferro: "0,4 mg", vitaminaC: "24,5 mg", proteina: "1,1 mg", gorduras: "1,25 mg", fibras: "2,42 mg", carboidratos: "10,5 mg", linkReceita: "https://www.tudogostoso.com.br/receita/77491-creme-de-cupuacu.html", ImgReceita: "assets/image 21.svg"},
-    { nome: "Aveia", imagem: "assets/aveia.svg", valorEnergético: "110 kcal", Carboidratos: "17g", proteinas: "4,4g", gorduras: "2,7g", fibra: "3g", sodio: "0mg", linkReceita: "https://www.receiteria.com.br/receita/cestinhas-de-aveia-com-banana-e-iogurte/", ImgReceita: "assets/receitaAveia.svg"},
-    { nome: "Banana", imagem: "assets/banana.svg", vitamina: "64mg", ferro: "0,2mg", magnesio: "26mg", fosforo: "22mg", potassio: "358mg", linkReceita: "https://www.tudogostoso.com.br/receita/119737-bolo-de-banana-rapido-de-liquidificador.html", ImgReceita: "assets/receitaBanana.svg"},
-    {nome: "Cheetos", imagem: "assets/cheetos.svg", quantidade: "componente", valorEnerg: "119kcal", carboidratos: "16g", proteina: "'1,5g", gorduras: "5,6 mg", sodio: "120g", linkReceita: "https://cazamoderna.com.br/receita-de-queijo-empanado-com-cheetos/",  ImgReceita: "assets/receitaCheetos.svg"},
-    {nome: "Doce de Leite", imagem: "assets/doce.svg", quantidade: "componente", valorEnerg: "110kcal", carboidratos: "11g", proteina: "'1,5g", gorduras: "6,3 mg", sodio: "110g", linkReceita: "https://www.tudogostoso.com.br/receita/4865-doce-de-leite-caseiro.html", ImgReceita: "assets/receitaDoce.svg"},
-    {nome: "Miojo", imagem: "assets/miojo.svg", quantidade: "componente", valorEnerg: "110kcal", carboidratos: "11g", proteina: "'1,5g", gorduras: "6,3 mg", sodio: "110g", linkReceita: "https://www.tudogostoso.com.br/receita/111830-miojo-cremoso.html",  ImgReceita: "assets/receitaMiojo.svg"}
+    {nome: "Cupuaçu", imagem: "assets/cupuaçu.svg", calcio: "8,9 mg", fosforo: "16,3 mg", ferro: "0,4 mg", vitaminaC: "24,5 mg", proteina: "1,1 g", gorduras: "1,25 g", fibras: "2,42 g", carboidratos: "10,5 g", linkReceita: "https://www.tudogostoso.com.br/receita/77491-creme-de-cupuacu.html", ImgReceita: "assets/ImgReceitas/receitaCupuacu.jpeg" },
+    {nome: "Aveia", imagem: "assets/aveia.svg", calcio: "54 mg", fosforo: "164 mg", ferro: "3,6 mg", vitaminaC: "0 mg", proteina: "13,15 g", gorduras: "6,9 g", fibras: "10,6 g", carboidratos: "66,3 g", linkReceita: "https://www.receiteria.com.br/receita/cestinhas-de-aveia-com-banana-e-iogurte/", ImgReceita: "assets/ImgReceitas/receitaAveia.jpeg" },
+    {nome: "Banana", imagem: "assets/banana.svg", calcio: "5 mg", fosforo: "22 mg", ferro: "0,3 mg", vitaminaC: "8,7 mg", proteina: "1,09 g", gorduras: "0,33 g", fibras: "2,6 g", carboidratos: "22,84 g", linkReceita: "https://www.tudogostoso.com.br/receita/119737-bolo-de-banana-rapido-de-liquidificador.html", ImgReceita: "assets/ImgReceitas/receitaBanana.jpeg" },
+    {nome: "Cheetos", imagem: "assets/cheetos.svg", calcio: "24 mg", fosforo: "101 mg", ferro: "0,4 mg", vitaminaC: "0 mg", proteina: "2,2 g", gorduras: "9,9 g", fibras: "0,9 g", carboidratos: "20 g", linkReceita: "https://cazamoderna.com.br/receita-de-queijo-empanado-com-cheetos/", ImgReceita: "assets/ImgReceitas/receitaCheetos.jpeg" },
+    {nome: "Doce", imagem: "assets/doce.svg", calcio: "127 mg", fosforo: "142 mg", ferro: "0,2 mg", vitaminaC: "0 mg", proteina: "3,22 g", gorduras: "7,65 g", fibras: "0 g", carboidratos: "57,57 g", linkReceita: "https://www.tudogostoso.com.br/receita/4865-doce-de-leite-caseiro.html", ImgReceita: "assets/ImgReceitas/receitaDoce.jpeg" },
+    {nome: "Miojo", imagem: "assets/miojo.svg", calcio: "23 mg", fosforo: "92 mg", ferro: "0,66 mg", vitaminaC: "0 mg", proteina: "6,3 g", gorduras: "14,2 g", fibras: "0,6 g", carboidratos: "27,2 g", linkReceita: "https://www.tudogostoso.com.br/receita/111830-miojo-cremoso.html", ImgReceita: "assets/ImgReceitas/receitaMiojo.jpeg" }
 ];
-
 function gerarCards() {
     const container = document.getElementById('alimentosContainer');
 
@@ -98,12 +97,18 @@ function goToTelaInicial() {
     }
 };
 
+function goToTelaSalvos() {
+    const botaoSalvos = document.getElementById('botao');
+    if(botaoSalvos){
+        window.location.href = 'TelaSalvos.html';
+    }
+};
+
 function goToTelaAlimentoEspecificado(nomeAlimento) {
     const alimentoSelecionado = especificacoes.find(alimento => alimento.nome === nomeAlimento);
     localStorage.setItem('alimentoSelecionado', JSON.stringify(alimentoSelecionado));
     window.location.href = 'TelaAlimentoEspecificado.html';
 }
-
 
 function Pesquisar() {
     const pesquisaInput = document.querySelector('.BarraPesquisa').value;
